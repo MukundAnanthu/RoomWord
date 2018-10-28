@@ -18,7 +18,7 @@ public abstract class WordRoomDatabase extends RoomDatabase {
     // expensive instances of the db being opened at the same time
     private static volatile WordRoomDatabase dbInstance;
 
-    static WordRoomDatabase getDataBase(final Context context) {
+    public static WordRoomDatabase getDataBase(final Context context) {
         if(dbInstance == null) {
             synchronized (WordRoomDatabase.class) {
                 dbInstance = Room.databaseBuilder(context.getApplicationContext(), WordRoomDatabase.class, "word_database").build();
