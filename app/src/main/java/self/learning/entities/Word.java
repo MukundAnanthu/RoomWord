@@ -13,10 +13,12 @@ public class Word {
     @ColumnInfo(name = "word")
     private String word;
 
+    //required
     public Word(@NonNull String word) {
         this.word = word;
     }
 
+    //required
     @NonNull
     public String getWord() {
         return word;
