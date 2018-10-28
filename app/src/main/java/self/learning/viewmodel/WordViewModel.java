@@ -30,7 +30,7 @@ public class WordViewModel extends AndroidViewModel {
         this.words = wordRepository.getWords();
     }
 
-    public LiveData<List<Word>> getWords() {
+    public LiveData<List<Word>> getAllWords() {
         return words;
     }
 
